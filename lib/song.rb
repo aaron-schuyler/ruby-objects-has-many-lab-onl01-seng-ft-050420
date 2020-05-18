@@ -10,6 +10,10 @@ class Song
     @@all 
   end
   def artist_name
-    @artist.name
+    if @artist.name
+      @artist.name
+    else
+      NIL
+    end
   end
 end 
